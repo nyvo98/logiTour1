@@ -8,7 +8,8 @@
     "build:prod": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-console.log.log --copy-files",
     "start": "npm run build && node dist/index.js",
     "start:prod": "node dist/index.js",
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node index.js",
+    "pm2": "pm2 start ecosystem.config.js"
   },
   "author": "khiemkino",
   "license": "ISC",
