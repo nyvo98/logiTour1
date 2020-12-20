@@ -19,8 +19,8 @@ export default class OtherServices {
           payment_method: 'paypal'
         },
         redirect_urls: {
-          return_url: 'http://localhost:3032/api/tour/paypalResponse',
-          cancel_url: 'http://localhost:3032/api/tour/paypalResponse'
+          return_url: 'https://staging.adel-tour.com/api/tour/paypalResponse',
+          cancel_url: 'https://staging.adel-tour.com/api/tour/paypalResponse'
         },
         transactions: [{
           item_list: {
