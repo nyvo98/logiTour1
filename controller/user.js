@@ -88,7 +88,8 @@ export default class UserServices {
 
   static async onCreateUser (response) {
     return new Promise(async (resolve, reject) => {
-      const { id, picture, password, email, isLogin, isLoginAdmin } = response
+      let { id, picture, password, email, isLogin, isLoginAdmin } = response
+      id = email
       console.log(response)
       const emailFormat = lowerCase(email)
 
