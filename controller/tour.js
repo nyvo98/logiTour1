@@ -57,8 +57,8 @@ export default class TourServices {
       const { paymentId } = req.query
       const payload = await BookingHistorySevices.getLocal(paymentId)
       res.redirect(payload
-        ? `${process.env.ADEL_WEB_APP_URL}/package-detail/${payload.tourId}?success=true`
-        : `${process.env.ADEL_WEB_APP_URL}/package-detail/${payload.tourId}?failed=false`
+        ? `${process.env.ADEL_WEB_APP_URL}package-detail/${payload.tourId}?success=true`
+        : `${process.env.ADEL_WEB_APP_URL}package-detail/${payload.tourId}?failed=false`
       )
       BookingHistorySevices.putPaymentStatus(paymentId)
     } catch (error) {
