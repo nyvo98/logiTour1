@@ -19,8 +19,8 @@ export default class OtherServices {
           payment_method: 'paypal'
         },
         redirect_urls: {
-          return_url: 'http://localhost:30332/api/tour/paypalResponse',
-          cancel_url: 'http://localhost:30332/api/tour/paypalResponse'
+          return_url: 'http://localhost:3032/api/tour/paypalResponse',
+          cancel_url: 'http://localhost:3032/api/tour/paypalResponse'
         },
         transactions: [{
           item_list: {
